@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}News{% endblock %}
+    
+{% block body %}
+
+    <div class="row justify-content-center">
+        <h1 id="hword">{{ word }}</h1>
+    </div>
+    {% for article in articles %}
+
+        <div class="card">
+            <div class="card-body">
+               <b> {{ article['title'] }} </b> <br>
+                {{ article['source']['name'] }} <br>
+                {{ article['description'] }}
+            </div>
+        </div>
+
+    {% endfor %}
+
+{% endblock %}

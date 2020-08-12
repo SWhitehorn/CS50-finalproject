@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block body %}
+
+    <div class="row justify-content-center" id="mainh">
+        <h1>Enter a word!</h1>
+    </div>
+    <div class="parent-div">
+        <form action="/" method="POST">
+            <div class="form group">
+                <input autocomplete="off" class="form-control-lg" name="word" id="word" placeholder="Enter word to search" type="text">
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-primary submit_button" type="submit" id='get_news'>Get news</button></button>
+            </div>
+        </form>
+    </div>
+    <div class="row justify-content-center">
+        <p><h4>Top Ten News is a site which provides the top ten news stories from the past 24 hours on any word you choose.</h4></p>
+        <p><h4>Simply enter a word in the search bar or click 'random' to see a random word.</h4></p>
+    </div>
+{% endblock %}

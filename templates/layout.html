@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='/static/style.css' rel='stylesheet'>
+    <title>Top Ten News: {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-custom">
+        <a href="/" class="navbar-brand">Top Ten News</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/news" class="nav-link">Random</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
